@@ -1,0 +1,75 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Item title:</b>
+  <%= @entry.item_title %>
+</p>
+
+<p>
+  <b>Phonetic form:</b>
+  <%= @entry.phonetic_form %>
+</p>
+
+<p>
+  <b>Alternative forms:</b>
+  <%= @entry.alternative_forms %>
+</p>
+
+<p>
+  <b>Pronunciation:</b>
+  <%= @entry.pronunciation %>
+</p>
+
+<p>
+  <b>Explanation:</b>
+  <%= @entry.explanation %>
+</p>
+
+<p>
+  <b>Is dialect:</b>
+  <%= @entry.is_dialect %>
+</p>
+
+<p>
+  <b>Dialect:</b>
+  <%= @entry.dialect_id %>
+</p>
+
+<p>
+  <b>Is foreign:</b>
+  <%= @entry.is_foreign %>
+</p>
+
+<p>
+  <b>Language:</b>
+  <%= @entry.language_id %>
+</p>
+
+<p>
+  <b>Pejorative leve:</b>
+  <%= @entry.pejorative_leve %>
+</p>
+
+<p>
+  <b>Upvotes:</b>
+  <%= @entry.upvotes %>
+</p>
+
+<p>
+  <b>Downvotes:</b>
+  <%= @entry.downvotes %>
+</p>
+
+<p>
+  <b>Date created:</b>
+  <%= @entry.date_created %>
+</p>
+
+<p>
+  <b>Date updated:</b>
+  <%= @entry.date_updated %>
+</p>
+
+
+<%= link_to 'Edit', edit_entry_path(@entry) %> |
+<%= link_to 'Back', entries_path %>

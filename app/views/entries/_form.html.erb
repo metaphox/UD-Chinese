@@ -1,0 +1,73 @@
+<%= form_for(@entry) do |f| %>
+  <% if @entry.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@entry.errors.count, "error") %> prohibited this entry from being saved:</h2>
+
+      <ul>
+      <% @entry.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :item_title %><br />
+    <%= f.text_field :item_title %>
+  </div>
+  <div class="field">
+    <%= f.label :phonetic_form %><br />
+    <%= f.text_field :phonetic_form %>
+  </div>
+  <div class="field">
+    <%= f.label :alternative_forms %><br />
+    <%= f.text_field :alternative_forms %>
+  </div>
+  <div class="field">
+    <%= f.label :pronunciation %><br />
+    <%= f.text_field :pronunciation %>
+  </div>
+  <div class="field">
+    <%= f.label :explanation %><br />
+    <%= f.text_area :explanation %>
+  </div>
+  <div class="field">
+    <%= f.label :is_dialect %><br />
+    <%= f.check_box :is_dialect %>
+  </div>
+  <div class="field">
+    <%= f.label :dialect_id %><br />
+    <%= f.text_field :dialect_id %>
+  </div>
+  <div class="field">
+    <%= f.label :is_foreign %><br />
+    <%= f.check_box :is_foreign %>
+  </div>
+  <div class="field">
+    <%= f.label :language_id %><br />
+    <%= f.text_field :language_id %>
+  </div>
+  <div class="field">
+    <%= f.label :pejorative_leve %><br />
+    <%= f.number_field :pejorative_leve %>
+  </div>
+  <div class="field">
+    <%= f.label :upvotes %><br />
+    <%= f.number_field :upvotes %>
+  </div>
+  <div class="field">
+    <%= f.label :downvotes %><br />
+    <%= f.number_field :downvotes %>
+  </div>
+  <div class="field">
+    <%= f.label :date_created %><br />
+    <%= f.datetime_select :date_created %>
+  </div>
+  <div class="field">
+    <%= f.label :date_updated %><br />
+    <%= f.datetime_select :date_updated %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

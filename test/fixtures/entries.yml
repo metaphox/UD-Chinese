@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  item_title: MyString
+  phonetic_form: MyString
+  alternative_forms: MyString
+  pronunciation: MyString
+  explanation: MyText
+  is_dialect: false
+  dialect_id: MyString
+  is_foreign: false
+  language_id: MyString
+  pejorative_leve: 1
+  upvotes: 1
+  downvotes: 1
+  date_created: 2011-12-21 22:56:14
+  date_updated: 2011-12-21 22:56:14
+
+two:
+  item_title: MyString
+  phonetic_form: MyString
+  alternative_forms: MyString
+  pronunciation: MyString
+  explanation: MyText
+  is_dialect: false
+  dialect_id: MyString
+  is_foreign: false
+  language_id: MyString
+  pejorative_leve: 1
+  upvotes: 1
+  downvotes: 1
+  date_created: 2011-12-21 22:56:14
+  date_updated: 2011-12-21 22:56:14

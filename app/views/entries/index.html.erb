@@ -1,0 +1,49 @@
+<h1>Listing entries</h1>
+
+<table>
+  <tr>
+    <th>Item title</th>
+    <th>Phonetic form</th>
+    <th>Alternative forms</th>
+    <th>Pronunciation</th>
+    <th>Explanation</th>
+    <th>Is dialect</th>
+    <th>Dialect</th>
+    <th>Is foreign</th>
+    <th>Language</th>
+    <th>Pejorative leve</th>
+    <th>Upvotes</th>
+    <th>Downvotes</th>
+    <th>Date created</th>
+    <th>Date updated</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @entries.each do |entry| %>
+  <tr>
+    <td><%= entry.item_title %></td>
+    <td><%= entry.phonetic_form %></td>
+    <td><%= entry.alternative_forms %></td>
+    <td><%= entry.pronunciation %></td>
+    <td><%= entry.explanation %></td>
+    <td><%= entry.is_dialect %></td>
+    <td><%= entry.dialect_id %></td>
+    <td><%= entry.is_foreign %></td>
+    <td><%= entry.language_id %></td>
+    <td><%= entry.pejorative_leve %></td>
+    <td><%= entry.upvotes %></td>
+    <td><%= entry.downvotes %></td>
+    <td><%= entry.date_created %></td>
+    <td><%= entry.date_updated %></td>
+    <td><%= link_to 'Show', entry %></td>
+    <td><%= link_to 'Edit', edit_entry_path(entry) %></td>
+    <td><%= link_to 'Destroy', entry, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Entry', new_entry_path %>
