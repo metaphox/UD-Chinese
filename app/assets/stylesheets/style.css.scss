@@ -27,6 +27,23 @@ body {
    padding-top: 60px;
 }
 
+form label{
+  width:100px;
+}
+
+form input, textarea, select, .uneditable-input{
+  width:140px;
+}
+
+form .input{
+  margin-left:120px;
+}
+
+.container{
+  width:90%;
+  min-width:288px;
+}
+
 @media only screen and (min-width: 480px){
 
 }

@@ -1,0 +1,83 @@
+<%= form_for(@entry) do |f| %>
+  <% if @entry.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= @entry.errors.count %> prohibited this term from being saved:</h2>
+
+      <ul>
+      <% @entry.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :item_title %>
+    <div class="input">
+      <%= f.text_field :item_title %>
+    </div>
+  </div>
+  <div class="field">
+    <%= f.label :phonetic_form %><div class="input">
+    <%= f.text_field :phonetic_form %>
+    </div>
+  </div>
+  <div class="field">
+    <%= f.label :alternative_forms %><div class="input">
+    <%= f.text_field :alternative_forms %>
+    </div>
+  </div>
+  <div class="field">
+    <%= f.label :pronunciation %><div class="input">
+    <%= f.text_field :pronunciation %>
+    </div>
+  </div>
+  <div class="field">
+    <%= f.label :explanation %><div class="input">
+    <%= f.text_area :explanation %>
+    </div>
+  </div>
+  <div class="field">
+    <%= f.label :examples %><div class="input">
+    <%= f.text_area :examples %>
+    </div>
+  </div>
+  <div class="field">
+    <%= f.label :dialect %><div class="input">
+    <%= f.text_field :dialect %>
+    </div>
+  </div>
+  <div class="field">
+    <%= f.label :foreign_language %><div class="input">
+    <%= f.text_field :foreign_language %>
+    </div>
+  </div>
+  <div class="field">
+    <%= f.label :pejorative_level %><div class="input">
+    <%= f.number_field :pejorative_level %>
+    </div>
+  </div>
+  <div class="field">
+    <%= f.label :upvotes %><div class="input">
+    <%= f.number_field :upvotes %>
+    </div>
+  </div>
+  <div class="field">
+    <%= f.label :downvotes %><div class="input">
+    <%= f.number_field :downvotes %>
+    </div>
+  </div>
+  <div class="field">
+    <%= f.label :date_created %><div class="input">
+    <%= f.datetime_select :date_created %>
+    </div>
+  </div>
+  <div class="field">
+    <%= f.label :date_updated %><div class="input">
+    <%= f.datetime_select :date_updated %>
+    </div>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

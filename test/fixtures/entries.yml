@@ -3,31 +3,31 @@
 one:
   item_title: MyString
   phonetic_form: MyString
-  alternative_forms: MyString
   pronunciation: MyString
+  alternative_forms: MyText
   explanation: MyText
-  is_dialect: false
-  dialect_id: MyString
-  is_foreign: false
-  language_id: MyString
-  pejorative_leve: 1
+  examples: MyText
+  dialect: MyString
+  foreign_language: MyString
+  pejorative_level: 1
   upvotes: 1
   downvotes: 1
-  date_created: 2011-12-21 22:56:14
-  date_updated: 2011-12-21 22:56:14
+  date_created: 2011-12-26 22:40:49
+  date_updatede: 2011-12-26 22:40:49
+  creator: 1
 
 two:
   item_title: MyString
   phonetic_form: MyString
-  alternative_forms: MyString
   pronunciation: MyString
+  alternative_forms: MyText
   explanation: MyText
-  is_dialect: false
-  dialect_id: MyString
-  is_foreign: false
-  language_id: MyString
-  pejorative_leve: 1
+  examples: MyText
+  dialect: MyString
+  foreign_language: MyString
+  pejorative_level: 1
   upvotes: 1
   downvotes: 1
-  date_created: 2011-12-21 22:56:14
-  date_updated: 2011-12-21 22:56:14
+  date_created: 2011-12-26 22:40:49
+  date_updatede: 2011-12-26 22:40:49
+  creator: 1

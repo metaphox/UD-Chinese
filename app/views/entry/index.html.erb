@@ -1,0 +1,40 @@
+<h1>Listing entries</h1>
+
+<dl>
+<% @entries.each do |entry| %>
+  <dt id="<%= entry.id %>"><%= entry.item_title %></dt>
+  <dd class="explaination">
+    <div class="phonetic"><%= entry.phonetic_form %></div>
+    <div class="pronunciation"><%= entry.pronunciation %></div>
+    <div class="alternative-forms"><%= entry.alternative_forms %></div>
+    <div class="explanation"><%= entry.explanation %></div>
+    <div class="examples">
+      <header>Examples</header>
+      <%= entry.examples %>
+    </div>
+    <div class="atrributes">
+      <div class="dialect-id"><%= entry.dialect %></div>
+      <div class="is-foreign"><%= entry.foreign_language %></div>
+    </div>
+    <div class="pejorative"><%= entry.pejorative_level %></div>
+    <div class="votes">
+      <span class="upvotes"><%= entry.upvotes %></span>
+      /
+      <span class="downvotes"><%= entry.downvotes %></span>
+    </div>
+    <div class="metadata">
+      <div class="date-created"><%= entry.date_created %></div>
+      <div class="date-updated"><%= entry.date_updated %></div>
+    </div>
+    <div class="permalink"><%= link_to 'Show', entry %></div>
+    <div class="editor">
+      <div class="edit-link"><%= link_to 'Edit', edit_entry_path(entry) %></div>
+      <div class="delete-link"><%=
+        link_to 'Destroy', entry, :confirm => 'Are you sure?',
+        :method => :delete
+        %></div>
+    </div>
+<% end %>
+</dl>
+
+<%= link_to 'New Entry', new_entry_path %>

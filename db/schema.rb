@@ -10,9 +10,28 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111221215614) do
+ActiveRecord::Schema.define(:version => 20111226220959) do
 
   create_table "entries", :force => true do |t|
+    t.string   "item_title"
+    t.string   "phonetic_form"
+    t.string   "pronunciation"
+    t.text     "alternative_forms"
+    t.text     "explanation"
+    t.text     "examples"
+    t.string   "dialect"
+    t.string   "foreign_language"
+    t.integer  "pejorative_level"
+    t.integer  "upvotes"
+    t.integer  "downvotes"
+    t.datetime "date_created"
+    t.datetime "date_updated"
+    t.integer  "creator"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "term", :force => true do |t|
     t.string   "item_title"
     t.string   "phonetic_form"
     t.string   "alternative_forms"

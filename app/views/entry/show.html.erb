@@ -26,28 +26,18 @@
 </p>
 
 <p>
-  <b>Is dialect:</b>
-  <%= @entry.is_dialect %>
-</p>
-
-<p>
   <b>Dialect:</b>
-  <%= @entry.dialect_id %>
-</p>
-
-<p>
-  <b>Is foreign:</b>
-  <%= @entry.is_foreign %>
+  <%= @entry.dialect %>
 </p>
 
 <p>
   <b>Language:</b>
-  <%= @entry.language_id %>
+  <%= @entry.foreign_language %>
 </p>
 
 <p>
   <b>Pejorative leve:</b>
-  <%= @entry.pejorative_leve %>
+  <%= @entry.pejorative_level %>
 </p>
 
 <p>
@@ -72,4 +62,4 @@
 
 
 <%= link_to 'Edit', edit_entry_path(@entry) %> |
-<%= link_to 'Back', entries_path %>
+<%= link_to 'Back', entry_path %>

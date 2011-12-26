@@ -1,4 +1,4 @@
-class EntriesController < ApplicationController
+class EntryController < ApplicationController
   # GET /entries
   # GET /entries.json
   def index
@@ -76,7 +76,7 @@ class EntriesController < ApplicationController
     @entry.destroy
 
     respond_to do |format|
-      format.html { redirect_to entries_url }
+      format.html { redirect_to entry_url }
       format.json { head :ok }
     end
   end
