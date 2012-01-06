@@ -1,5 +1,7 @@
 <h1>Listing entries</h1>
-
+<ul>
+  <li><%= entries_path %></li>
+</ul>
 <dl>
 <% @entries.each do |entry| %>
   <dt id="<%= entry.id %>"><%= entry.item_title %></dt>
